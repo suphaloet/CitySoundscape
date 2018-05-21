@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Redirect } from 'react-router-dom';
 import Route from 'react-router-dom/Route';
 import Heatmap3D from './pages/heatmap-3d';
+import Graph from './pages/graph';
 class App extends Component {
   render() {
     return (
@@ -13,8 +14,9 @@ class App extends Component {
         <NavbarLayout />
         <Router>
         <div className="App">
-          <Route path="/" render={()=>{return(<Redirect to="/heatmap3d/"/>);}}/>
+          <Route path="/" exact strict render={()=>{return(<Redirect to="/heatmap3d/"/>);}}/>
           <Route path="/heatmap3d/" exact strict component={ Heatmap3D }/>
+          <Route path="/graph/" exact strict component={ Graph }/>
         </div>
       </Router>
       </div>
