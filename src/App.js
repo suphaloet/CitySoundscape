@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Redirect } from 'react-router-dom';
 import Route from 'react-router-dom/Route';
 import Heatmap3D from './pages/heatmap-3d';
 import Graph from './pages/graph';
+import heatmap2d from './pages/heatmap-2d';
 class App extends Component {
   render() {
     return (
@@ -16,6 +17,7 @@ class App extends Component {
         <div className="App">
           <Route path="/" exact strict render={()=>{return(<Redirect to="/heatmap3d/"/>);}}/>
           <Route path="/heatmap3d/" exact strict component={ Heatmap3D }/>
+          <Route path="/heatmap2d/" exact strict component={ heatmap2d} />
           <Route path="/graph/" exact strict component={ Graph }/>
         </div>
       </Router>
