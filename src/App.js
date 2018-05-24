@@ -8,6 +8,7 @@ import Route from 'react-router-dom/Route';
 import Heatmap3D from './pages/heatmap-3d';
 import Graph from './pages/graph';
 import heatmap2d from './pages/heatmap-2d';
+import Calculate from './pages/calculate';
 class App extends Component {
   render() {
     return (
@@ -19,6 +20,7 @@ class App extends Component {
           <Route path="/heatmap3d/" exact strict component={ Heatmap3D }/>
           <Route path="/heatmap2d/" exact strict component={ heatmap2d} />
           <Route path="/graph/" exact strict component={ Graph }/>
+          <Route path="/calculate/" exact strict component={Calculate} />
         </div>
       </Router>
       </div>

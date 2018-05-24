@@ -37,10 +37,7 @@ class NavbarLayout extends Component {
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink href="/heatmap3d/">Heatmap 3D</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="/heatmap2d/">Heatmap 2D</NavLink>
+                                <NavLink href="/heatmap2d/">Heatmap</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="/graph/">Graph</NavLink>
